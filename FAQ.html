@@ -7,34 +7,190 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
 
-    <body style="background-color:rgb(55, 124, 133);"></body>
+    <!-- de banner -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="./images/FAQ.png" alt="First slide">
+            </div>
+        </div>
+    </div>
 
-    <div class="jumbotron text-black bg-light">
-        <h1 class="display-4 text-dark">FAQ </h1>
-        <p class="lead text-dark">Antwoorden op de meest gestelde vragen!</p>
-        <hr class="my-4">
-        <h6 class="text-dark">klik op een van de knoppen om naar de pagina te gaan.</h6>
-        <p class="lead">
 
-            <nav class="nav">
-                <a class="nav-link text-dark" href="index.html">Home</a>
-                <a class="nav-link text-dark" href="ons.html">Over ons</a>
-                <a class="nav-link text-dark" href="kamp.html">Kamp</a>
-                <a class="nav-link text-dark" href="handleiding.html">Gamehandleiding</a>
-                <a class="nav-link text-dark" href="game.html">de game</a>
-                <a class="nav-link text-dark" href="contact.html">Contact</a>
-                <a class="active text-dark" href="FAQ.html">FAQ</a>
-                <a class="nav-link text-dark" href="slideshow.html">Slideshow Kamp</a>
+    <h5>
+        <!-- het navigatie menu -->
+        <nav class="nav">
+            <a class="nav-link text-white" href="index.html">Home</a>
+            <a class="nav-link text-white" href="ons.html">Over ons</a>
+            <a class="nav-link text-white" href="kamp.html">Kamp</a>
+            <a class="nav-link text-white" href="handleiding.html">Gamehandleiding</a>
+            <a class="nav-link text-white" href="game.html">De game</a>
+            <a class="nav-link text-white" href="contact.html">Contact</a>
+            <a class="active text-white" href="FAQ.html">FAQ</a>
+            <a class="nav-link text-white" href="galerij.html">Galerij</a>
 
-            </nav>
+        </nav>
+    </h5>
+
 </head>
-<!--a class="btn btn-primary btn-lg" href="#" role="button">Over ons</a>
-              <a class="btn btn-primary btn-lg" href="#" role="button">Introductie kamp</a>
-              <a class="btn btn-primary btn-lg" href="#" role="button">Gamehandleiding</a>
-              <a class="btn btn-primary btn-lg" href="#" role="button">De game</a>
-              <a class="btn btn-primary btn-lg" href="#" role="button">Contact
-                <a class="btn btn-primary btn-lg" href="#" role="button">FAQ</a-->
-</a>
-</p>
+<!-- de 1e jumbotron -->
+<div class="jumbotron text-black bg-light">
+    <h1 class="display-4 text-dark">FAQ </h1>
+    <p class="lead text-dark">Antwoorden op de meest gestelde vragen!</p>
+    <hr class="my-4">
+
+    <p class="lead"></p>
+</div>
+
+<body>
+
+    <!-- het begin van de FAQ tabs -->
+    <div id="accordion">
+        <!-- eerste tab -->
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        Wat zijn de kosten van mbo?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    De kosten van een mbo-opleiding zijn hoger dan in het voortgezet
+                    onderwijs. Ze vallen uiteen in wettelijke kosten, verplichte en vrijwillige leermiddelen. De
+                    kosten
+                    van een BBL-opleiding zijn afwijkend.
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- tweede tab -->
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                        Kan ik financiële ondersteuning krijgen?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                    Het is mogelijk om extra financiële ondersteuning te krijgen
+                    wanneer
+                    uw kind jonger is dan 18 jaar en start met een BOL-opleiding.
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- derde tab -->
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree">
+                        Hoe word ik geïnformeerd over de studievoortgang van mijn kind?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                    MBO Utrecht is verplicht om ouders en verzorgers te informeren
+                    over hoe het met hun kind gaat op school. Daarvoor organiseren wij ouderavonden en is de
+                    Studieloopbaanbegeleider (SLB’er) van uw kind goed bereikbaar per e-mail.
+
+                    Wanneer uw kind 18 jaar of ouder is, vinden wij het informeren over studievoortgang nog
+                    steeds belangrijk. MBO Utrecht heeft dan toestemming nodig van de student om informatie over
+                    studievoortgang met haar ouders te delen. Uw kind dient zelf aan te geven dat zij dat wel of
+                    niet wil.
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- vierde tab -->
+        <div class="card">
+            <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                        aria-expanded="false" aria-controls="collapseFour">
+                        Wanneer heeft mijn kind schoolvakantie?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body">
+                    Het overzicht van de schoolvakanties en andere vrije dagen wordt ruim voor het begin van het nieuwe
+                    schooljaar vastgesteld.
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- vijfde tab -->
+        <div class="card">
+            <div class="card-header" id="headingFive">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive"
+                        aria-expanded="false" aria-controls="collapseFive">
+                        Hoe kan ik een adreswijziging doorgeven?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                <div class="card-body">
+                    Adreswijzigingen kunt u via e-mail doorgeven aan de Studentadministratie:
+                    studentadministratie@mboutrecht.nl .
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- zesde tab -->
+        <div class="card">
+            <div class="card-header" id="headingSixt">
+                <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSixt"
+                        aria-expanded="false" aria-controls="collapseSixt">
+                        Hoe kan mijn kind een klacht indienen? </button>
+                </h5>
+            </div>
+            <div id="collapseSixt" class="collapse" aria-labelledby="headingSixt" data-parent="#accordion">
+                <div class="card-body">
+                    Wij willen uw kind een prettige leeromgeving bieden. Waar gewerkt wordt, kunnen er ook dingen
+                    misgaan. Onderwijs is mensenwerk.
+
+                    De eerste stap is altijd om in gesprek te gaan met de docent of medewerker om de vraag onderling op
+                    te lossen.
+
+                    Wanneer in gesprek gaan niet helpt, is het mogelijk om een klacht in te dienen.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<br>
+<!-- de footer -->
+<div class="footer1">
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+        <a href="https://www.youtube.com/watch?v=6n3pFFPSlW4"> De overheid</a>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+    integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+    integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
